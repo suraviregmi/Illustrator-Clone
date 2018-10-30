@@ -8,13 +8,11 @@ body {
 
 .bodyWrapper {
     margin: 0 auto;
-    max-width: 80.25em;
+    max-width: 98%;
 }
 
 .color-bar {
     cursor: pointer;
-    width: 15em;
-    height: 15em;
 }
 
 .top-menu {
@@ -111,14 +109,14 @@ hr {
     background-color: #41423E;
     width: 73.208722741%;
     /*    height: 42.056074766%;*/
-    height: 540px;
+    height: 550px;
     float: left;
     border-radius: 5px;
 }
 
 .svgContainer {
     width: 95.744680851%;
-    height: 500px;
+    height: 93%;
     margin: 20px;
 }
 
@@ -154,9 +152,9 @@ hr {
 
 .right-menu {
     /*    min-width: 244px;*/
-    min-width: 19.0031153%;
+    width: 18.0031153%;
     float: left;
-    margin: 0 25px;
+    margin: 0 0 0 25px;
     background-color: #323330;
 }
 
@@ -179,7 +177,7 @@ hr {
 
 .layer-tab button {
     color: #cbcbcb;
-    margin: 5px 18px;
+    margin: 5px 5%;
     height: 40px;
     width: 40px;
     font: inherit;
@@ -194,7 +192,7 @@ hr {
     color: #000;
     float: left;
     line-height: 30px;
-    width: 17em;
+    width: 80%;
     font-size: 12px;
     text-align: center;
     cursor: pointer;
@@ -208,7 +206,7 @@ hr {
     float: left;
     color: #fff;
     line-height: 30px;
-    width: 17em;
+    width: 80%;
     font-size: 12px;
     text-align: center;
     cursor: pointer;
@@ -224,7 +222,7 @@ hr {
     height: 30px;
     font-family: "Font Awesome 5 Free";
     line-height: 30px;
-    width: 30px;
+    width: 15%;
     font-size: 12px;
     text-align: center;
     cursor: pointer;
@@ -296,7 +294,7 @@ hr {
     border-bottom: 2px solid #494949;
     border-right: 2px solid #494949;
     display: none;
-    width: 15em;
+
     background-color: #323330;
 }
 
@@ -321,7 +319,7 @@ ul {
 
 input[type=range] {
     margin: 20px 0 20px 10px;
-    width: 15em;
+    width: 80%;
     border-radius: 5px;
     cursor: pointer;
     -webkit-appearance: none;
@@ -366,6 +364,47 @@ input[type=range]::-webkit-slider-runnable-track {
 
     font-size: 16px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
