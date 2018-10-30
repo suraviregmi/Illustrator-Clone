@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Illutrator Clone</title>
@@ -32,14 +32,14 @@
         </div>
         <div class="middle clearfix">
             <div class="left-menu">
-                <button class="pen-tool" id="pen-tool"> <i class="fa fa-pencil-alt"></i></button>
-                <button class="rect-tool" id="rect-tool"><i class="fa fa-square"></i></button>
-                <button class="circle-tool" id="circle-tool"><i class="fa fa-circle"></i> </button>
-                <button class="curve-tool" id="curve-tool"><i class="fas fa-bezier-curve"></i> </button>
-                <button class="font" id="font"><i class="fa fa-font"></i> </button>
-                <button class="bucket" id="bucket"><i class="fa fa-fill-drip"></i> </button>
-                <button class="hand" id="hand"><i class="fa fa-hand-paper"></i> </button>
-                <button id="undo"><i class="fa fa-undo"></i> </button>
+                <button class="pen-tool" id="pen-tool" title="Pencil"> <i class="fa fa-pencil-alt"></i></button>
+                <button class="rect-tool" id="rect-tool" title="Rectangle"><i class="fa fa-square"></i></button>
+                <button class="circle-tool" id="circle-tool" title="Circle"><i class="fa fa-circle"></i> </button>
+                <button class="curve-tool" id="curve-tool" title="Pen Tool"><i class="fas fa-bezier-curve"></i> </button>
+                <button class="font" id="font" title="Text"><i class="fa fa-font"></i> </button>
+                <button class="bucket" id="bucket" title="Bucket"><i class="fa fa-fill-drip"></i> </button>
+                <button class="hand" id="hand" title="Grab Tool"><i class="fa fa-hand-paper"></i> </button>
+                <button id="undo" title="Undo Drawing"><i class="fa fa-undo"></i> </button>
             </div>
             <div class="drawingBoard">
                 <div class="svgContainer" id="svgContainer">
@@ -68,8 +68,8 @@
                 </div>
                 <button class=" dropdown-btn">Layer <i class="fa fa-plus"></i> </button>
                 <div class="dropdown-container layer-tab ">
-                    <button id="createLayer"><i class="fa fa-plus"></i></button>
-                    <button id="deleteLayer"><i class="fa fa-trash"></i></button>
+                    <button id="createLayer" title="Add New Layer"><i class="fa fa-plus"></i></button>
+                    <button id="deleteLayer" title="Delete Selected Layer"><i class="fa fa-trash"></i></button>
                     <button id="mergeLayer" title="Merge Layers"><i class="fa fa-layer-group"></i></button>
                     <div class="leftCol clearfix" id="leftCol">
                     </div>
@@ -77,21 +77,21 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/mainPainter.js"></script>
-    <script type="text/javascript" src="js/layerControl.js"></script>
-    <script type="text/javascript" src="js/UI.js"></script>
-    <script type="text/javascript" src="js/toolBox.js"></script>
-    <script type="text/javascript" src="js/toolProperties.js"></script>
-    <script type="text/javascript" src="js/tools.js"></script>
-    <script type="text/javascript" src="js/download.js"></script>
-    <!--    <script type="text/javascript" src="js/ui.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript" src="js/draw.js"></script>
-        <script type="text/javascript" src="js/layercontrol.js"></script>
-        <script type="text/javascript" src="js/toolProperties.js"></script>
-        <script type="text/javascript" src="js/download.js"></script>
-        <script type="text/javascript" src="js/toolBox.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/mainPainter.js"></script>
+    <script src="js/layerControl.js"></script>
+    <script src="js/UI.js"></script>
+    <script src="js/toolBox.js"></script>
+    <script src="js/toolProperties.js"></script>
+    <script src="js/tools.js"></script>
+    <script src="js/download.js"></script>
+    <!--    <script  src="js/ui.js"></script>
+        <script  src="js/main.js"></script>
+        <script  src="js/draw.js"></script>
+        <script  src="js/layercontrol.js"></script>
+        <script  src="js/toolProperties.js"></script>
+        <script  src="js/download.js"></script>
+        <script  src="js/toolBox.js"></script> -->
 </body>
 
 </html>
