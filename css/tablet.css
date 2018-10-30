@@ -1,0 +1,10 @@
+.right-menu {
+
+
+    margin: 0 10px;
+    min-width: 16.666666667%;
+}
+
+input[type="range"] {
+    margin: 10px 5px;
+}

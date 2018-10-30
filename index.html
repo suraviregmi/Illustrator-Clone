@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="font/font-awesome-4.7.0/css/all.min.css" />
+    <link rel="stylesheet" media='screen and (max-width: 768px)' href="css/tablet.css" />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <div class="bodyWrapper">
+        <div class="top-menu">
+            <div class="menu-item1">
+                Illustrator Clone
+            </div>
+            <div class="menu-content">
+                <button class="menu-button">Layers</button>
+                <div class="sub-menu-item">
+                    <a href="#" id="clear"> <span class="menu-options first">Delete All Layers</span>
+                </a>
+                    <hr>
+                    <a href="#" id="clearCurrentLayer"> <span class="menu-options">Clear Current Layer</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="middle clearfix">
+            <div class="left-menu">
+                <button class="pen-tool" id="pen-tool"> <i class="fa fa-pencil-alt"></i></button>
+                <button class="rect-tool" id="rect-tool"><i class="fa fa-square"></i></button>
+                <button class="circle-tool" id="circle-tool"><i class="fa fa-circle"></i> </button>
+                <button class="curve-tool" id="curve-tool"><i class="fas fa-bezier-curve"></i> </button>
+                <button class="font" id="font"><i class="fa fa-font"></i> </button>
+                <button class="bucket" id="bucket"><i class="fa fa-fill-drip"></i> </button>
+                <button class="hand" id="hand"><i class="fa fa-hand-paper"></i> </button>
+                <button id="undo"><i class="fa fa-undo"></i> </button>
+            </div>
+            <div class="drawingBoard">
+                <div class="svgContainer" id="svgContainer">
+                    <svg id="SVG" xmlns="http://www.w3.org/2000/svg">
+                    </svg>
+                </div>
+            </div>
+            <div class="right-menu">
+                <button id="download" class="downloadbtn"> Download <i class="fa fa-download"></i> </button>
+                <button class="size-tab dropdown-btn">Size <i class="fa fa-plus"></i> </button>
+                <div class="size dropdown-container">
+                    <div class="sizeDiv">
+                        <input type="range" name="range" id="size" min="1" max="25" value="2">
+                        <span class="inputValue" id="inputValue">2</span>
+                    </div>
+                </div>
+                <button class="Color-tab dropdown-btn">Color <i class="fa fa-plus"></i></button>
+                <div class="color dropdown-container" id="color">
+                    <div class="color-tool">
+                        <input type="color" name="color-picker" class="color-picker" id="color-picker">
+                    </div>
+                    <div class="color-picker">
+                        <div class="transparentColor" id="transparentColor">Transparent</div>
+                        <canvas class="color-bar" width="240" height="240"></canvas>
+                    </div>
+                </div>
+                <button class=" dropdown-btn">Layer <i class="fa fa-plus"></i> </button>
+                <div class="dropdown-container layer-tab ">
+                    <button id="createLayer"><i class="fa fa-plus"></i></button>
+                    <button id="deleteLayer"><i class="fa fa-trash"></i></button>
+                    <button id="mergeLayer" title="Merge Layers"><i class="fa fa-layer-group"></i></button>
+                    <div class="leftCol clearfix" id="leftCol">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/mainPainter.js"></script>
+    <script type="text/javascript" src="js/layerControl.js"></script>
+    <script type="text/javascript" src="js/UI.js"></script>
+    <script type="text/javascript" src="js/toolBox.js"></script>
+    <script type="text/javascript" src="js/toolProperties.js"></script>
+    <script type="text/javascript" src="js/tools.js"></script>
+    <script type="text/javascript" src="js/download.js"></script>
+    <!--    <script type="text/javascript" src="js/ui.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/draw.js"></script>
+        <script type="text/javascript" src="js/layercontrol.js"></script>
+        <script type="text/javascript" src="js/toolProperties.js"></script>
+        <script type="text/javascript" src="js/download.js"></script>
+        <script type="text/javascript" src="js/toolBox.js"></script> -->
+</body>
+
+</html>

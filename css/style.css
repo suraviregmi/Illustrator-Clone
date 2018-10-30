@@ -1,0 +1,494 @@
+body {
+
+    background-color: #323330;
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.bodyWrapper {
+    margin: 0 auto;
+    max-width: 80.25em;
+}
+
+.color-bar {
+    cursor: pointer;
+    width: 15em;
+    height: 15em;
+}
+
+.top-menu {
+    height: 48px;
+
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    z-index: 2;
+    background-color: #323330;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu-item1 {
+    display: inline-block;
+    padding: 0 20px;
+    color: #49c;
+    line-height: 48px;
+    cursor: pointer;
+}
+
+.menu-button {
+    line-height: 48px;
+    padding: 0 10px;
+    color: #cbcbcb;
+    outline: none;
+    border: none;
+    font-size: inherit;
+    background: none;
+}
+
+.menu-content {
+    position: relative;
+    display: inline-block;
+}
+
+.sub-menu-item {
+    display: none;
+    position: absolute;
+    background-color: #323330;
+    width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: inherit;
+    border: 1px solid #2b2c2a;
+}
+
+.sub-menu-item a {
+    margin: 4px 0;
+    padding: 0 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-options {
+    margin: 5px 0px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+
+    color: #fff;
+}
+
+hr {
+    border: 0.5px solid #41423E;
+}
+
+.sub-menu-item a:hover {
+    background-color: #4192cb;
+}
+
+.menu-content:hover .sub-menu-item {
+    display: block;
+}
+
+.menu-content:hover .menu-button {
+    background-color: #41423E;
+    color: #fff;
+}
+
+.middle {
+    width: 100%;
+}
+
+.left-menu {
+    width: 50px;
+    float: left;
+    padding: 70px 0;
+    background-color: #545454;
+    font-size: 24px;
+}
+
+.drawingBoard {
+    background-color: #41423E;
+    width: 73.208722741%;
+    /*    height: 42.056074766%;*/
+    height: 540px;
+    float: left;
+    border-radius: 5px;
+}
+
+.svgContainer {
+    width: 95.744680851%;
+    height: 500px;
+    margin: 20px;
+}
+
+
+#SVG {
+
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.left-menu button {
+    color: #cbcbcb;
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    border-radius: 4px;
+}
+
+.left-menu button:hover {
+    color: #fff !important;
+}
+
+.right-menu {
+    /*    min-width: 244px;*/
+    min-width: 19.0031153%;
+    float: left;
+    margin: 0 25px;
+    background-color: #323330;
+}
+
+.leftCol {
+    width: 100%;
+}
+
+.transparentColor {
+    line-height: 30px;
+    padding: 0px 20px;
+    color: #000;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+}
+
+.layer-tab button:hover {
+    color: #fff !important;
+}
+
+.layer-tab button {
+    color: #cbcbcb;
+    margin: 5px 18px;
+    height: 40px;
+    width: 40px;
+    font: inherit;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.activeLayerBlock {
+    color: #000;
+    float: left;
+    line-height: 30px;
+    width: 17em;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 2px solid #323330;
+    border-left: 2px solid #323330;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.inactiveLayerBlock {
+    float: left;
+    color: #fff;
+    line-height: 30px;
+    width: 17em;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    border-left: 2px solid #323330;
+    border-bottom: 2px solid #323330;
+    background-color: #494949;
+    border-radius: 5px;
+}
+
+.unclickedEye {
+    float: left;
+    color: #fff;
+    height: 30px;
+    font-family: "Font Awesome 5 Free";
+    line-height: 30px;
+    width: 30px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 2px solid #323330;
+    border-left: 2px solid #323330;
+    border-right: 2px solid #323330;
+    background-color: #4192cb;
+    border-radius: 5px;
+}
+
+.unclickedEye::before {
+
+    content: "\f06e";
+}
+
+
+.clickedEye {
+    float: left;
+    height: 30px;
+    font-family: "Font Awesome 5 Free";
+    line-height: 30px;
+    width: 30px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: 2px solid #323330;
+    border-left: 2px solid #323330;
+    border-right: 2px solid #323330;
+    background-color: #494949;
+    border-radius: 5px;
+}
+
+.clickedEye::before {
+
+    content: "\f06e";
+}
+
+
+
+
+.dropdown-btn,
+.downloadbtn {
+    /*  width: 240px;*/
+    /* width: calc(100% - 4px);*/
+    width: 100%;
+
+    line-height: 28px;
+
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background-color: #41423E;
+    border-top: 2px solid #494949;
+    text-align: left;
+    color: #cbcbcb;
+    cursor: pointer;
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+
+
+.dropdown-container {
+    border-left: 2px solid #494949;
+    border-bottom: 2px solid #494949;
+    border-right: 2px solid #494949;
+    display: none;
+    width: 15em;
+    background-color: #323330;
+}
+
+.dropdown-btn:hover,
+.downloadbtn:hover {
+    color: #f1f1f1;
+}
+
+ul {
+    list-style: none;
+}
+
+.dropdown-btn .fa,
+.downloadbtn .fa {
+    float: right;
+    line-height: inherit;
+}
+
+.color-tool {
+    display: none;
+}
+
+input[type=range] {
+    margin: 20px 0 20px 10px;
+    width: 15em;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+    /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+    background-color: #4192cb;
+    cursor: pointer;
+    margin-top: -6px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background-color: #cbcbcb;
+    height: 10px;
+    border-radius: 8px;
+}
+
+.inputValue {
+    color: #cbcbcb;
+
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*for bezier curve anchors and cp*/
+
+.draggable {
+    cursor: move;
+}
+
+.first-anchor,
+.second-anchor {
+    stroke: #333;
+    stroke-width: 1;
+    fill: #333;
+}
+
+.first-marker,
+.second-marker {
+    transition: fill 4s ease;
+    stroke: #333;
+    stroke-width: 1;
+    fill: none;
+}
+
+.dragging {
+    stroke: none;
+    stroke-width: 1;
+    fill: transparent;
+    cursor: pointer;
+}
+
+
+.activeTool {
+    color: #fff !important;
+    background-color: #4192cb !important;
+}
+
+.inactiveTool {
+    color: #ababab !important;
+    background-color: #545454 !important;
+}
