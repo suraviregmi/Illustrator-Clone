@@ -18,10 +18,11 @@ class ToolProperties {
         var colorFrame = new Image();
         // colorFrame.src =
         //     "http://2.bp.blogspot.com/_6ZIqLRChuQg/S2gHmfRGRoI/AAAAAAAAAdE/4SdZoVgu2pc/s320/rainbow.jpg";
-        colorFrame.src = "../images/color-picker.png";
+        colorFrame.src = "./images/color-picker.png";
         colorFrame.width = "200px";
 
         colorFrame.crossOrigin = "Anonymous";
+      //  document.body.appendChild(colorFrame);
         console.log(
             "canvas height width",
             this.canvas.height,
