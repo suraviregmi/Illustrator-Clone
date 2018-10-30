@@ -108,8 +108,7 @@ hr {
 .drawingBoard {
     background-color: #41423E;
     width: 73.208722741%;
-    /*    height: 42.056074766%;*/
-    height: 550px;
+
     float: left;
     border-radius: 5px;
 }
@@ -364,6 +363,9 @@ input[type=range]::-webkit-slider-runnable-track {
 
     font-size: 16px;
 }
+
+
+
 
 
 
