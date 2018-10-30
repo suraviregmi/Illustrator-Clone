@@ -23,11 +23,11 @@ class ToolProperties {
 
         colorFrame.crossOrigin = "Anonymous";
       //  document.body.appendChild(colorFrame);
-        console.log(
-            "canvas height width",
-            this.canvas.height,
-            this.canvas.width
-        );
+        // console.log(
+        //     "canvas height width",
+        //     this.canvas.height,
+        //     this.canvas.width
+        // );
         colorFrame.onload = () => {
             this.ctx.drawImage(
                 colorFrame,

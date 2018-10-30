@@ -31,7 +31,7 @@ document.onmousemove = e => {
 };
 
 window.onload = () => {
-    console.log(window.innerHeight);
+    //console.log(window.innerHeight);
     let canvasHeight = window.innerHeight;
     let drawingBoard = document.getElementById("drawingBoard");
     // console.log(drawingBoard);

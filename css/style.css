@@ -3,7 +3,10 @@ body {
     background-color: #323330;
     margin: 0;
     padding: 0;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+   
+    font-family: 'Megrim', cursive;
+    font-family: 'Ubuntu', sans-serif;
+
 }
 
 .bodyWrapper {
@@ -17,7 +20,6 @@ body {
 
 .top-menu {
     height: 48px;
-
     width: 100%;
     font-size: 16px;
     display: flex;
@@ -28,13 +30,18 @@ body {
 
 .menu-item1 {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 10px;
     color: #49c;
     line-height: 48px;
-    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Megrim', cursive;
+
+    
 }
 
 .menu-button {
+    font-weight: inherit;
     line-height: 48px;
     padding: 0 10px;
     color: #cbcbcb;
@@ -42,6 +49,7 @@ body {
     border: none;
     font-size: inherit;
     background: none;
+    font-family: inherit;
 }
 
 .menu-content {
@@ -175,6 +183,7 @@ hr {
 }
 
 .layer-tab button {
+    font-family: inherit;
     color: #cbcbcb;
     margin: 5px 5%;
     height: 40px;
@@ -265,6 +274,7 @@ hr {
 
 .dropdown-btn,
 .downloadbtn {
+    font-family: inherit;
     /*  width: 240px;*/
     /* width: calc(100% - 4px);*/
     width: 100%;

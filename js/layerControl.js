@@ -1,4 +1,3 @@
-console.log("layer control");
 
 class LayerElement {
     constructor() {
